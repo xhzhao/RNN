@@ -31,6 +31,7 @@ mkdir build
 cd build
 cmake ..
 make
+cd ..
 ```
 The C library should now be built along with test executables.
 
@@ -38,7 +39,7 @@ Then we bind this C library to pytorch:
 
 ```
 cd pytorch_binding
-python setup install
+python setup.py install
 cd ..
 ```
 
